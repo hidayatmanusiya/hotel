@@ -1,0 +1,26 @@
+{
+ "allow_roles": [
+  {
+   "role": "Customer"
+  }
+ ],
+ "creation": "2022-07-25 22:23:40.662312",
+ "docstatus": 0,
+ "doctype": "Module Onboarding",
+ "documentation_url": "",
+ "idx": 0,
+ "is_complete": 0,
+ "modified": "2022-08-31 16:01:39.746781",
+ "modified_by": "Administrator",
+ "module": "Hotel",
+ "name": "HMS",
+ "owner": "Administrator",
+ "steps": [
+  {
+   "step": "Create a Customer"
+  }
+ ],
+ "subtitle": "Hotel Room Mangaement",
+ "success_message": "The HMS Module is all set up!",
+ "title": "Let's Set Up the HMS Module. "
+}

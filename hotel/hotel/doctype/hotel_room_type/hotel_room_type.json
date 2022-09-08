@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-07-25 22:58:56.397075",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "room_type_code",
+  "naming_series",
+  "room_type",
+  "company",
+  "column_break_4",
+  "company_abbreviation",
+  "service_item",
+  "size_and_capacity_section",
+  "beds",
+  "extra_bed_mattress",
+  "max_guest_per_room",
+  "column_break_11",
+  "size_sq_mt",
+  "features_and_benefits_section",
+  "features",
+  "column_break_15",
+  "complimentary_benefits",
+  "add_a_comment_section"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "room_type_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Room Type Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "room_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Room Type",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "depends_on": "company",
+   "fetch_from": "company.abbr",
+   "fieldname": "company_abbreviation",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Company Abbreviation",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "service_item",
+   "fieldtype": "Link",
+   "label": "Service Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "size_and_capacity_section",
+   "fieldtype": "Section Break",
+   "label": "Size and Capacity"
+  },
+  {
+   "fieldname": "beds",
+   "fieldtype": "Int",
+   "label": "Beds",
+   "reqd": 1
+  },
+  {
+   "fieldname": "extra_bed_mattress",
+   "fieldtype": "Int",
+   "label": "Extra Bed Mattress"
+  },
+  {
+   "fieldname": "max_guest_per_room",
+   "fieldtype": "Data",
+   "label": "Max Guest Per Room",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "size_sq_mt",
+   "fieldtype": "Float",
+   "label": "Size Sq Mt"
+  },
+  {
+   "fieldname": "features_and_benefits_section",
+   "fieldtype": "Section Break",
+   "label": "Features and Benefits"
+  },
+  {
+   "fieldname": "features",
+   "fieldtype": "HTML Editor",
+   "label": "Features"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "complimentary_benefits",
+   "fieldtype": "HTML Editor",
+   "label": "Complimentary Benefits"
+  },
+  {
+   "fieldname": "add_a_comment_section",
+   "fieldtype": "Section Break",
+   "label": "Add a comment"
+  },
+  {
+   "default": "{room_type_code}.-.{company_abbreviation}.",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "{room_type_code}.-.{company_abbreviation}."
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-31 16:02:06.493453",
+ "modified_by": "Administrator",
+ "module": "Hotel",
+ "name": "Hotel Room Type",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "room_type_code,room_type",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "room_type_code",
+ "track_changes": 1
+}

@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-20 18:22:19.555847",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "holiday_list",
+  "web_settings_section",
+  "enable_scheduling",
+  "column_break_4",
+  "email_remainders",
+  "sms_remainders",
+  "section_break_7",
+  "web_notes",
+  "column_break_9",
+  "google_map_address",
+  "text_address",
+  "route"
+ ],
+ "fields": [
+  {
+   "fieldname": "holiday_list",
+   "fieldtype": "Link",
+   "label": "Holiday List",
+   "options": "Holiday List"
+  },
+  {
+   "fieldname": "web_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Web Settings"
+  },
+  {
+   "default": "true",
+   "fieldname": "enable_scheduling",
+   "fieldtype": "Check",
+   "label": " Enable Appointment Scheduling"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "Notify customer about appointment.",
+   "fieldname": "email_remainders",
+   "fieldtype": "Check",
+   "label": "Notify Via Email"
+  },
+  {
+   "default": "0",
+   "fieldname": "sms_remainders",
+   "fieldtype": "Check",
+   "label": " Notify Via SMS"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "Text to be displayed as footer on all appointment pages",
+   "fieldname": "web_notes",
+   "fieldtype": "HTML Editor",
+   "label": "Web Notes"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "google_map_address",
+   "fieldtype": "HTML Editor",
+   "label": "Google Address"
+  },
+  {
+   "fieldname": "text_address",
+   "fieldtype": "Text",
+   "label": "Text Address"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-08-20 18:28:33.507512",
+ "modified_by": "Administrator",
+ "module": "Appointment",
+ "name": "Appointment Scheduling Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

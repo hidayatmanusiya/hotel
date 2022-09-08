@@ -1,0 +1,163 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-25 19:51:21.786015",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plan_type",
+  "plan_name",
+  "duration_in_months",
+  "billing_interval",
+  "max_allowed_members",
+  "column_break_5",
+  "renewal_discount_",
+  "renewal_discount_amount",
+  "initialcorporate_discount_",
+  "initialcorporate_discount_amount",
+  "allow_suspension",
+  "item_details_section",
+  "item_code",
+  "item_name",
+  "item_group",
+  "column_break_15",
+  "description",
+  "price_list",
+  "rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "plan_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plan Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "duration_in_months",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Duration in Months",
+   "reqd": 1
+  },
+  {
+   "fieldname": "billing_interval",
+   "fieldtype": "Select",
+   "label": "Billing Interval",
+   "options": "\nMonth\nYear\nDay"
+  },
+  {
+   "fieldname": "max_allowed_members",
+   "fieldtype": "Select",
+   "label": "Max Allowed Members",
+   "options": "\n1\n2\n6"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "renewal_discount_",
+   "fieldtype": "Float",
+   "label": "Renewal Discount %"
+  },
+  {
+   "fieldname": "renewal_discount_amount",
+   "fieldtype": "Float",
+   "label": "Renewal Discount Amount"
+  },
+  {
+   "fieldname": "initialcorporate_discount_",
+   "fieldtype": "Float",
+   "label": "Initial/Corporate Discount %"
+  },
+  {
+   "fieldname": "initialcorporate_discount_amount",
+   "fieldtype": "Float",
+   "label": "Initial/Corporate Discount Amount"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_suspension",
+   "fieldtype": "Check",
+   "label": "Allow Suspension"
+  },
+  {
+   "fieldname": "item_details_section",
+   "fieldtype": "Section Break",
+   "label": "Item Details "
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "label": "Item Code"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Group",
+   "options": "Item Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "price_list",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Price List",
+   "options": "Price List",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Float",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "plan_type",
+   "fieldtype": "Link",
+   "label": "Plan Type",
+   "options": "Plan Type CT"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-08-27 19:31:12.267837",
+ "modified_by": "Administrator",
+ "module": "Club Membership",
+ "name": "Membership Plan CT",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,90 @@
+{
+ "cards_label": "Appointment",
+ "category": "Modules",
+ "charts": [],
+ "creation": "2022-08-10 19:58:45.571897",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "support",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Appointment",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Setup",
+   "link_type": "DocType",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Appointment Scheduling Settings",
+   "link_to": "Appointment Scheduling Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Facility & Service setup",
+   "link_to": "Facility",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Email Template : Appointment Confirmation",
+   "link_to": "Email Template",
+   "link_type": "DocType",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Bookings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Client Appointment",
+   "link_to": "Client Appointment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2022-08-21 10:33:44.045073",
+ "modified_by": "Administrator",
+ "module": "Appointment",
+ "name": "Appointment",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 1,
+ "shortcuts": [
+  {
+   "color": "#4F9DD9",
+   "doc_view": "Calendar",
+   "label": "Booking Calendar",
+   "link_to": "Client Appointment",
+   "type": "DocType"
+  }
+ ]
+}

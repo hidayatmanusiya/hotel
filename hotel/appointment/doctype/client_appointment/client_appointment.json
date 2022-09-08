@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-10 19:58:13.140093",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "facility",
+  "status",
+  "assigned_to",
+  "column_break_4",
+  "scheduled_from_date",
+  "scheduled_to_date",
+  "treatment_room",
+  "customer_details_section",
+  "customer_name",
+  "customer_phone_number",
+  "customer_email",
+  "payment_mode",
+  "column_break_13",
+  "customer_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nOpen\nNo-show\nClosed\nRescheduled\nCancelled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "facility",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Facility",
+   "options": "Facility",
+   "reqd": 1
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned To",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Africa/Lagos",
+   "fieldname": "scheduled_from_date",
+   "fieldtype": "Datetime",
+   "label": "Starts On",
+   "reqd": 1
+  },
+  {
+   "description": "Africa/Lagos",
+   "fieldname": "scheduled_to_date",
+   "fieldtype": "Datetime",
+   "label": "Ends On",
+   "reqd": 1
+  },
+  {
+   "fieldname": "treatment_room",
+   "fieldtype": "Select",
+   "label": "Treatment Room",
+   "options": "\nCouple Treatment Room\nFemale Spa Room 1\nFemale Spa Room 2\nMale Spa Room 1\nMale Spa Room 2"
+  },
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "customer_email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "payment_mode",
+   "fieldtype": "Select",
+   "label": "Payment Mode",
+   "options": "\nClub Account\nBank Transfer\nPay On Arrival\nPre-paid"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_details",
+   "fieldtype": "Text",
+   "label": "Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-08-23 05:56:18.932248",
+ "modified_by": "Administrator",
+ "module": "Appointment",
+ "name": "Client Appointment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
